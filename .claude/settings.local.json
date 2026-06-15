@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -o /tmp/phs-4732346.jpg \"https://images.pexels.com/photos/4732346/pexels-photo-4732346.jpeg?auto=compress&cs=tinysrgb&w=800\")",
+      "Bash(curl -s -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/120.0 Safari/537.36\" \"https://www.pexels.com/search/kampala%20skyline/\")",
+      "Read(//c/Users/spidd16/.agents/skills/ui-ux-pro-max/scripts\" 2>/dev/**)",
+      "Read(//c/Users/spidd16/**)",
+      "Bash(cd \"e:\\\\Blactec Projects\\\\PHS - 2\")",
+      "Bash(node __TRACKED_VAR__/detect.mjs --json index.html)",
+      "Bash(echo \"EXIT=$?\")",
+      "Bash(IMPECCABLE_CRITIQUE_META='{\"target\":\"the redesigned PHS home page and inner-page system\",\"total_score\":29,\"p0_count\":0,\"p1_count\":2}' node __TRACKED_VAR__/critique-storage.mjs write index-html .impeccable/_critique_body.md)",
+      "Bash(echo \"WRITE_EXIT=$?\")",
+      "Bash(rm -f \".impeccable/_critique_body.md\")",
+      "Bash(echo \"temp removed\")",
+      "Bash(echo \"--- trend ---\")"
+    ]
+  }
+}
