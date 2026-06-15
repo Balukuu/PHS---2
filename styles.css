@@ -475,8 +475,9 @@ p { max-width: 70ch; }
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
   background: var(--phs-green-ink);
   z-index: 999;
   padding: calc(var(--nav-height) + 2rem) 2rem 2rem;
@@ -487,7 +488,7 @@ p { max-width: 70ch; }
 
 .nav__mobile::after {
   content: '';
-  position: fixed;
+  position: absolute;
   inset: 0;
   opacity: 0.04;
   background-image: var(--grain);
