@@ -2001,6 +2001,91 @@ p { max-width: 70ch; }
 
 .mission-block p { color: rgba(253,252,249,0.72); font-size: 0.92rem; font-weight: 300; line-height: 1.8; margin: 0 auto; }
 
+/* Mission / Vision / Values cards */
+.mvv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-top: clamp(2.5rem, 4vw, 3.5rem);
+}
+
+.mvv-card {
+  background: rgba(21,189,102,0.07);
+  border: 1px solid rgba(21,189,102,0.2);
+  border-radius: var(--radius-lg);
+  padding: clamp(1.75rem, 3vw, 2.5rem);
+  text-align: left;
+  transition: transform var(--transition), border-color var(--transition), background var(--transition);
+}
+
+.mvv-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(21,189,102,0.4);
+  background: rgba(21,189,102,0.1);
+}
+
+.mvv-card__icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
+  background: rgba(21,189,102,0.16);
+  color: var(--phs-green-bright);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.4rem;
+}
+
+.mvv-card__icon svg { width: 26px; height: 26px; }
+
+.mvv-card h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: var(--phs-white);
+  margin-bottom: 0.75rem;
+}
+
+.mvv-card > p {
+  color: rgba(255,255,255,0.75);
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+
+.mvv-values {
+  display: flex;
+  flex-direction: column;
+  gap: 0.95rem;
+}
+
+.mvv-values li {
+  position: relative;
+  padding-left: 1.15rem;
+  color: rgba(255,255,255,0.72);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.mvv-values li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--phs-green-bright);
+}
+
+.mvv-values__term {
+  display: block;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--phs-white);
+  margin-bottom: 1px;
+}
+
 /* Org Chart */
 .org-chart {
   font-family: var(--font-body);
