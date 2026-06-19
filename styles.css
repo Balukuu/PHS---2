@@ -3161,16 +3161,17 @@ p { max-width: 70ch; }
 
 .feature-item {
   background: var(--phs-white);
-  border: var(--hairline);
+  border: 1px solid rgba(18,40,30,0.06);
   border-radius: var(--radius);
-  padding: 2.25rem 1.75rem;
+  padding: 2.5rem 2rem;
   text-align: center;
-  transition: border-color var(--transition-slow), box-shadow var(--transition-slow);
+  box-shadow: var(--shadow-sm);
+  transition: border-color var(--transition-slow), box-shadow var(--transition-slow), transform var(--transition-slow);
 }
 
 .feature-item:hover {
-  border-color: var(--phs-gold);
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
 }
 
 .feature-item__icon {
